@@ -1,16 +1,3 @@
-﻿
-function printMessage()
-{
-    var x = 10; 
-
-    for (var i = 1; i <= x; i++) {
-        console.log(i); 
-    }
-
-
-    //console.log("Hello");// this will print a message to the console 
-
-}
 
 function add()
 {
@@ -37,4 +24,19 @@ function addToList()
     // Add some text to the new cells:
     cell1.innerHTML = itemName;
     cell2.innerHTML = quantity;
+}
+
+function userChoice()
+{
+    var input = document.getElementById("userChoice").value;
+    var userList = document.getElementById("userList");
+
+    var row = userList.insertRow(1);
+
+    var cellOne = row.insertCell(0);
+    var cellTwo = row.insertCell(1);
+
+    cellOne.innerHTML = name;
+    cellTwo.innerHTML = amount;
+
 }
