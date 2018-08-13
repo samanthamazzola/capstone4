@@ -1,42 +1,28 @@
+var item = ["Milk", "Eggs", "Cheese", "Bread", "Soap", "Apples"];
+var quantity = 1;
+var price = [2.99 , 2.50, 4.99 , 3.25 , 5.99 , 4.00];
 
-function add()
+function addToList(i)
 {
-// read the data from the text boxes
-    var num1 = parseInt(document.getElementById("num1").value);
-    var num2 = parseInt(document.getElementById("num2").value);
-// add the numbers
-      var result = num1 + num2;
-// show the result 
-    alert(result);
-
-}
-
-function addToList()
-{
-    var itemName = document.getElementById("itemName").value;
+    console.log(item[i],quantity[i],price[i]); //passing index through
+    var item = document.getElementById("item").value;
     var quantity = document.getElementById("quantity").value;
-    var shoppingList = document.getElementById("shoppingList");
+    var price = document.getElementById("price").value;
     
-    var row = shoppingList.insertRow(1);
+    var row = receipt.insertRow(1);
     // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+
     // Add some text to the new cells:
-    cell1.innerHTML = itemName;
+    cell1.innerHTML = item;
     cell2.innerHTML = quantity;
+    cell3.innerHTML = price;
 }
 
-function userChoice()
-{
-    var input = document.getElementById("userChoice").value;
-    var userList = document.getElementById("userList");
 
-    var row = userList.insertRow(1);
 
-    var cellOne = row.insertCell(0);
-    var cellTwo = row.insertCell(1);
 
-    cellOne.innerHTML = name;
-    cellTwo.innerHTML = amount;
-
-}
+ 
+   
