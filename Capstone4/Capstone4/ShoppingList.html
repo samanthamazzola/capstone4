@@ -7,45 +7,37 @@
     </head>
     <body>
 
-        <table border="1" id="itemList">
+        <table border="1" id="shoppingList">
             <tr>
                 <th colspan="6">Items</th>
             </tr>
             <tr>
-                <td>Milk <button onclick="userChoice()" value="user choice">Add</button></td>
-                <td>Eggs <button onclick="userChoice()" value="user choice">Add</button></td>
-                <td>Cheese <button onclick="userChoice()" value="user choice">Add</button></td>
-                <td>Bread <button onclick="userChoice()" value="user choice">Add</button></td>
-                <td>Soap <button onclick="userChoice()" value="user choice">Add</button></td>
-                <td>Apples <button onclick="userChoice()" value="user choice">Add</button></td>
-
+                <td>Milk: $2.99 <button onclick="addToList(0)">Add to List</button></td>
+                <td>Eggs: $2.50 <button onclick="addToList(1)">Add to List</button></td>
+                <td>Cheese: $3.99 <button onclick="addToList(2)" >Add to List</button></td>
+                <td>Bread: $3.25 <button onclick="addToList(3)" >Add to List</button></td>
+                <td>Soap: $5.99 <button onclick="addToList(4)" >Add to List</button></td>
+                <td>Apples: $4.00 <button onclick="addToList(5)">Add to List</button></td>
             </tr>
         </table>
         <br /><br />
-        Item name: <input type="text" id="itemName" /><br /><br />
+        <table border="1" id="receipt">
+            <tr>
+                <th id="item">Item</th>
+                <th id="quantity">Quantity</th>
+                <th id="price">Price</th>
+            </tr>
+        </table>
+
+        <!--Item name: <input type="text" id="itemName" /><br /><br />
         Quantity: <input type="number" min="1" max="10" id="quantity" /> <br /><br />
         <button onclick="addToList()">Add to list</button><br /><br />
-        <table border="1" id="shoppingList">
+        <table border="1" id=itemList>
             <tr>
                 <th>Item Name</th>
                 <th>Quantity</th>
             </tr>
-        </table>
-
-        <br /><br />
-        Num1: <input type="text" id="num1" /> <br /> <br />
-        Num2: <input type="text" id="num2" /> <br /> <br />
-        <button onclick="add()">Add</button><br /> <br />
-
-        Item: <input type="text" id=item /><br /><br />
-        Amount: <input type="number" min="1" max="10" id="amount" /> <br /><br />
-        <button onclick="userChoice()">Add to list</button><br /><br />
-        <table border="1" id="userList">
-            <tr>
-                <th>Item</th>
-                <th>Amount</th>
-            </tr>
-        </table>
+        </table>-->
 
     </body>
 </html>
