@@ -6,38 +6,41 @@
         <script src="Scripts/myjscode.js" async></script>
     </head>
     <body>
-
+        
         <table border="1" id="shoppingList">
             <tr>
                 <th colspan="6">Items</th>
             </tr>
             <tr>
-                <td>Milk: $2.99 <button onclick="addToList(0)">Add to List</button></td>
-                <td>Eggs: $2.50 <button onclick="addToList(1)">Add to List</button></td>
-                <td>Cheese: $3.99 <button onclick="addToList(2)" >Add to List</button></td>
-                <td>Bread: $3.25 <button onclick="addToList(3)" >Add to List</button></td>
-                <td>Soap: $5.99 <button onclick="addToList(4)" >Add to List</button></td>
-                <td>Apples: $4.00 <button onclick="addToList(5)">Add to List</button></td>
+                <td id="Milk">Milk: $2.99 <button onclick="addToList(0)">Add to List</button></td>
+                <td id="Eggs">Eggs: $2.50 <button onclick="addToList(1)">Add to List</button></td>
+                <td id="Cheese">Cheese: $3.99 <button onclick="addToList(2)">Add to List</button></td>
+                <td id="Bread">Bread: $3.25 <button onclick="addToList(3)">Add to List</button></td>
+                <td id="Soap">Soap: $5.99 <button onclick="addToList(4)">Add to List</button></td>
+                <td id="Apples">Apples: $4.00 <button onclick="addToList(5)">Add to List</button></td>
             </tr>
         </table>
         <br /><br />
         <table border="1" id="receipt">
             <tr>
-                <th id="item">Item</th>
+                <th id="item">Item</th> 
                 <th id="quantity">Quantity</th>
                 <th id="price">Price</th>
             </tr>
         </table>
+        <br /><br />
+
+        <p>Your total: </p><p id="total"></p>
 
         <!--Item name: <input type="text" id="itemName" /><br /><br />
-        Quantity: <input type="number" min="1" max="10" id="quantity" /> <br /><br />
-        <button onclick="addToList()">Add to list</button><br /><br />
-        <table border="1" id=itemList>
-            <tr>
-                <th>Item Name</th>
-                <th>Quantity</th>
-            </tr>
-        </table>-->
+    Quantity: <input type="number" min="1" max="10" id="quantity" /> <br /><br />
+    <button onclick="addToList()">Add to list</button><br /><br />
+    <table border="1" id=itemList>
+        <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+        </tr>
+    </table>-->
 
     </body>
 </html>
