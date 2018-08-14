@@ -1,6 +1,6 @@
 var item = ["Milk", "Eggs", "Cheese", "Bread", "Soap", "Apples"];
-var quantity = [0,0,0,0,0,0];
-var price = [2.99 , 2.50, 4.99 , 3.25 , 5.99 , 4.00];
+var quantity = [1,1,1,1,1,1];
+var price = [2.99 , 2.50, 4.99 , 3.25 , 5.99 , 4.10];
 var total = 1;
 
 function addToList(index)
@@ -19,8 +19,8 @@ function addToList(index)
 
     // Add some text to the new cells:
     cell1.innerText = item[index];
-    cell2.innerHTML = document.getElementById(quantity[index]);
-    cell3.innerHTML = document.getElementById(price[index]);
+    cell2.innerText = quantity[index];
+    cell3.innerText = price[index];
 
 }
 
