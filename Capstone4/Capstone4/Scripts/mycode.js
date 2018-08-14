@@ -1,25 +1,55 @@
 var item = ["Milk", "Eggs", "Cheese", "Bread", "Soap", "Apples"];
-var quantity = 1;
+var quantity = [0,0,0,0,0,0];
 var price = [2.99 , 2.50, 4.99 , 3.25 , 5.99 , 4.00];
+var total = 1;
 
-function addToList(i)
+function addToList(index)
 {
-    console.log(item[i],quantity[i],price[i]); //passing index through
-    var item = document.getElementById("item").value;
-    var quantity = document.getElementById("quantity").value;
-    var price = document.getElementById("price").value;
+    console.log(item[index],quantity[index],price[index]); //passing index through
+    addItem = document.getElementById("item").value;
+    addQuantity = document.getElementById("quantity").value;
+    addPrice = document.getElementById("price").value;
     
     var row = receipt.insertRow(1);
+
     // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
 
     // Add some text to the new cells:
-    cell1.innerHTML = item;
-    cell2.innerHTML = quantity;
-    cell3.innerHTML = price;
+    cell1.innerText = item[index];
+    cell2.innerHTML = document.getElementById(quantity[index]);
+    cell3.innerHTML = document.getElementById(price[index]);
+
 }
+
+function orderTotal(index)
+{
+    var orderItem = document.getElementById("item").value;
+    var orderQuantity = document.getElementById("quantity").value;
+    var orderPrice = document.getElementById("price").value;
+
+    total = document.getElementById("item").innerHTML = price * quantity;
+
+
+    for(var i = 1; i <= total[0].item.length; i++){
+        if (quantity[i] > 0)
+        {
+            count += 0;
+            var row = receipt.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            cell1.innerHTML = item;
+            cell2.innerHTML = quantity;
+            cell3.innerHTML = item[i] + "$" + price[i] * quantity[i];
+        }
+    }   
+    
+}
+
+
 
 
 
