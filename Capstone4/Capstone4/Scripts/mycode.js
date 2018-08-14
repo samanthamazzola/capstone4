@@ -1,7 +1,9 @@
 var item = ["Milk", "Eggs", "Cheese", "Bread", "Soap", "Apples"];
 var quantity = [1,1,1,1,1,1];
 var price = [2.99 , 2.50, 4.99 , 3.25 , 5.99 , 4.10];
+var itemPrice = 0;
 var total = 1;
+
 
 function addToList(index)
 {
@@ -24,27 +26,24 @@ function addToList(index)
 
 }
 
-function orderTotal(index)
+var total = 
+
+function printOrderTotal(index)
 {
     var orderItem = document.getElementById("item").value;
     var orderQuantity = document.getElementById("quantity").value;
     var orderPrice = document.getElementById("price").value;
 
-    total = document.getElementById("item").innerHTML = price * quantity;
+    var total = document.getElementById("item").innerHTML = price * quantity;
 
 
-    for(var i = 1; i <= total[0].item.length; i++){
+    for(var i = 1; i <= receipt.length; i++){
         if (quantity[i] > 0)
         {
-            count += 0;
-            var row = receipt.insertRow(1);
-            var cell1 = row.insertCell(0);
-            var cell2 = row.insertCell(1);
-            var cell3 = row.insertCell(2);
-            cell1.innerHTML = item;
-            cell2.innerHTML = quantity;
-            cell3.innerHTML = item[i] + "$" + price[i] * quantity[i];
+          console.log(receipt[i]);
         }
+          console.log(itemPrice.toFixed(2));
+
     }   
     
 }
